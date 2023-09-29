@@ -30,7 +30,7 @@ const projectsData = [
       image: "/images/projects/3.webp",
       tag:["All", "Web"],
       gitUrl: "/",
-    previewUrl: "#",
+    previewUrl: "/",
   },
   {
     id: 3,
@@ -38,8 +38,8 @@ const projectsData = [
     decription: "En Progreso",
     image: "/images/projects/3.webp",
     tag:["All", "móvil"],
-    gitUrl: "#",
-    previewUrl: "#",
+    gitUrl: "/",
+    previewUrl: "/",
 },
 ]
 const ProjectsSection = () => {
