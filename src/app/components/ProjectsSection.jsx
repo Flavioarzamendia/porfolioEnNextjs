@@ -37,7 +37,7 @@ const projectsData = [
     title: "Proximamente",
     decription: "En Progreso",
     image: "/images/projects/3.webp",
-    tag:["All", "Mobile"],
+    tag:["All", "móvil"],
     gitUrl: "#",
     previewUrl: "#",
 },
@@ -65,7 +65,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects
+        Mis Proyectos
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
@@ -80,8 +80,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="móvil"
+          isSelected={tag === "Móvil"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
