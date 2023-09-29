@@ -1,10 +1,14 @@
-import React from "react";
+"use client"
+import Rect from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import ContactForm from "./ContactForm";
 
 const EmailSection = () => {
+
+
   return (
     <section
       id="contact"
@@ -29,58 +33,8 @@ const EmailSection = () => {
         </div>
       </div>
       <div className="z-10">
-        <form className="flex flex-col" method="POST">
-          <div className="mb-6">
-            <label
-              htmlFor="email"
-              className="text-white block mb-2 text-sm font-medium"
-            >
-              Tu Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              required
-              className="bg-[#18191E] border border-orange-400 placeholder-[#9CA2A9] text-white text-sm rounded-lg block w-full p-2.5"
-              placeholder="Juan123@gmail.com"
-            />
-          </div>
-          <div className="mb-6">
-            <label
-              htmlFor="subject"
-              className="text-white block text-sm mb-2 font-medium"
-            >
-              Nombre
-            </label>
-            <input
-              type="text"
-              id="subject"
-              required
-              className="bg-[#18191E] border border-orange-400 placeholder-[#9CA2A9] text-white text-sm rounded-lg block w-full p-2.5"
-              placeholder="Nombre"
-            />
-          </div>
-          <div className="mb-6">
-            <label
-              htmlFor="message"
-              className="text-white block text-sm mb-2 font-medium"
-            >
-              Mensaje
-            </label>
-            <textarea
-              name="message"
-              id="message"
-              className="bg-[#18191E] border border-orange-400 placeholder-[#9CA2A9] text-white text-sm rounded-lg block w-full p-2.5"
-              placeholder="Escribe tu mensaje"
-            />
-          </div>
-          <button
-            type="submit"
-            className="bg-purple-600 hover:bg-purple-500 text-white font-medium py-2.5 px-5 rounded-lg w-full"
-          >
-            Enviar
-          </button>
-        </form>
+        <ContactForm></ContactForm>
+       
       </div>
     </section>
   );
