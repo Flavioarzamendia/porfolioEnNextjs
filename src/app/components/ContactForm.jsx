@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-export default () => {
+export default ()  => {
   const [status, setStatus] = useState({
     submitted: false,
     submitting: false,
@@ -74,7 +74,7 @@ export default () => {
           className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
           placeholder='Juan Perez'
         />
-        <label htmlFor="email" className='mb-4 pt-2'>Su Email</label>
+        <label htmlFor="email" className='text-white block text-sm mb-2 font-medium mt-4'>Su Email</label>
         <input
           id="email"
           type="email"
