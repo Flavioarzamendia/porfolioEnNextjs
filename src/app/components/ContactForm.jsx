@@ -1,8 +1,9 @@
-"use client"
-import React, { useState } from 'react';
+"use client";
+import React,{useState} from 'react';
 import axios from 'axios';
 
-export default ()  => {
+const ContactForm = () => {
+
   const [status, setStatus] = useState({
     submitted: false,
     submitting: false,
@@ -63,53 +64,56 @@ export default ()  => {
   };
   return (
     <main className="z-10">
-      <form onSubmit={handleOnSubmit} className="flex flex-col">
-        <label type="textarea" htmlFor='name' className="text-white block text-sm mb-2 font-medium mt-4 pb-2">Nombre</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          onChange={handleOnChange}
-          required
-          value={inputs.name}
-          className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-          placeholder='Juan Perez'
-        />
-        <label htmlFor="email" className='text-white block text-sm mb-2 font-medium mt-4'>Email</label>
-        <input
-          id="email"
-          type="email"
-          name="_replyto"
-          onChange={handleOnChange}
-          required
-          value={inputs.email}
-          className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-          placeholder='juanPerez123@gmail.com'
-        />
-        <label htmlFor="message" className="text-white block text-sm mb-2 font-medium mt-4"
-        >Mensaje</label>
-        <textarea
-          id="message"
-          name="message"
-          onChange={handleOnChange}
-          required
-          value={inputs.message}
-          className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 mt-2"
-          placeholder='Escriba su mensaje'
-        />
-        <button type="submit" disabled={status.submitting} className="bg-purple-500 border hover:bg-purple-600 border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 mt-6">
-          {!status.submitting
-            ? !status.submitted
-              ? 'Enviar'
-              : 'Enviado'
-            : 'Enviando...'}
-        </button>
-      </form>
-      {status.info.error && (
-        <div className="error">Error: {status.info.msg}</div>
-      )}
-      {!status.info.error && status.info.msg && <p className='text-green-500 mt-3 text-center'>{status.info.msg}</p>}
-    </main>
-  );
-};
+    <form onSubmit={handleOnSubmit} className="flex flex-col">
+      <label type="textarea" htmlFor='name' className="text-white block text-sm mb-2 font-medium mt-4 pb-2">Nombre</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        onChange={handleOnChange}
+        required
+        value={inputs.name}
+        className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+        placeholder='Juan Perez'
+      />
+      <label htmlFor="email" className='text-white block text-sm mb-2 font-medium mt-4'>Email</label>
+      <input
+        id="email"
+        type="email"
+        name="_replyto"
+        onChange={handleOnChange}
+        required
+        value={inputs.email}
+        className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+        placeholder='juanPerez123@gmail.com'
+      />
+      <label htmlFor="message" className="text-white block text-sm mb-2 font-medium mt-4"
+      >Mensaje</label>
+      <textarea
+        id="message"
+        name="message"
+        onChange={handleOnChange}
+        required
+        value={inputs.message}
+        className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 mt-2"
+        placeholder='Escriba su mensaje'
+      />
+      <button type="submit" disabled={status.submitting} className="bg-purple-500 border hover:bg-purple-600 border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 mt-6">
+        {!status.submitting
+          ? !status.submitted
+            ? 'Enviar'
+            : 'Enviado'
+          : 'Enviando...'}
+      </button>
+    </form>
+    {status.info.error && (
+      <div className="error">Error: {status.info.msg}</div>
+    )}
+    {!status.info.error && status.info.msg && <p className='text-green-500 mt-3 text-center'>{status.info.msg}</p>}
+  </main>
+);
+  
+}
+
+export default ContactForm;
 
