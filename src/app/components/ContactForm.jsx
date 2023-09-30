@@ -98,7 +98,7 @@ const ContactForm = () => {
         className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 mt-2"
         placeholder='Escriba su mensaje'
       />
-      <button type="submit" disabled={status.submitting} className="bg-purple-500 border hover:bg-purple-600 border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 mt-6">
+      <button type="submit" disabled={status.submitting} className="bg-purple-600 border hover:bg-purple-500 border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 mt-6">
         {!status.submitting
           ? !status.submitted
             ? 'Enviar'
