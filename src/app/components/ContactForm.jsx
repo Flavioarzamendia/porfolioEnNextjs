@@ -64,8 +64,9 @@ export default ()  => {
   return (
     <main className="z-10">
       <form onSubmit={handleOnSubmit} className="flex flex-col">
-        <label htmlFor='autocomplete' className="text-white block text-sm mb-2 font-medium mt-4 pb-2">Nombre</label>
+        <label type="textarea" htmlFor='name' className="text-white block text-sm mb-2 font-medium mt-4 pb-2">Nombre</label>
         <input
+          type="text"
           id="name"
           name="name"
           onChange={handleOnChange}
@@ -83,7 +84,7 @@ export default ()  => {
           required
           value={inputs.email}
           className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-          placeholder='juan123@gmail.com'
+          placeholder='juanPerez123@gmail.com'
         />
         <label htmlFor="message" className="text-white block text-sm mb-2 font-medium mt-4"
         >Mensaje</label>
