@@ -8,7 +8,7 @@ const projectsData = [
   {
   id: 1,
   title: "Portfolio HTML y CSS",
-  decription: "Proyecto de porfolio web wn Html5 y Css3",
+  description: "Proyecto de porfolio web wn Html5 y Css3",
   image: "/images/projects/1.webp",
   tag:["All", "Web"],
   gitUrl: "https://github.com/Flavioarzamendia/Portfolio-html-css",
@@ -17,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     title: "Mi porfolio",
-    decription: "Mi porfolio web personal",
+    description: "Mi porfolio web personal, Hecho con Nextjs",
     image: "/images/projects/2.webp" ,
     tag:["All", "Web"],
     gitUrl:"https://github.com/Flavioarzamendia/porfolioEnNextjs",
@@ -26,19 +26,19 @@ const projectsData = [
   {
       id: 3,
       title: "Web de Fotografia",
-      decription: "Web de fotografo",
+      description: "Web de fotografo , hecho con wordpress responsivo",
       image: "/images/projects/3.webp",
-      tag:["All", "Web"],
-      gitUrl: "/",
+      tag:["All", "Web", "Wordpress"],
+      gitUrl: "https://github.com/Flavioarzamendia",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Proximamente",
-    decription: "En Progreso",
+    title: "Sitio web colegio",
+    description: "Sitio web para Colegio, hecho con Worpress responsivo",
     image: "/images/projects/4.webp",
-    tag:["All", "móvil"],
-    gitUrl: "/",
+    tag:["All", "Wordpress","Web"],
+    gitUrl: "https://github.com/Flavioarzamendia",
     previewUrl: "/",
 },
 ]
@@ -80,8 +80,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="móvil"
-          isSelected={tag === "Móvil"}
+          name="Wordpress"
+          isSelected={tag === "Wordpress"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
