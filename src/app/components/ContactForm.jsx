@@ -65,7 +65,8 @@ const ContactForm = () => {
   return (
     <main className="z-10">
     <form onSubmit={handleOnSubmit} className="flex flex-col">
-      <label type="textarea" htmlFor='name' className="text-white block text-sm mb-2 font-medium mt-4 pb-2">Nombre</label>
+      <div>
+      <label type="textarea" htmlFor='name' className="text-white block text-sm mb-2 font-medium  border-l-4 border-green-600 pl-4">Nombre</label>
       <input
         type="text"
         id="name"
@@ -73,10 +74,12 @@ const ContactForm = () => {
         onChange={handleOnChange}
         required
         value={inputs.name}
-        className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+        className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
         placeholder='Juan Perez'
       />
-      <label htmlFor="email" className='text-white block text-sm mb-2 font-medium mt-4'>Email</label>
+      </div>
+      <div>
+      <label htmlFor="email" className='text-white block text-sm mb-2 font-medium mt-4 border-l-4 border-green-600 pl-4'>Email</label>
       <input
         id="email"
         type="email"
@@ -84,10 +87,12 @@ const ContactForm = () => {
         onChange={handleOnChange}
         required
         value={inputs.email}
-        className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+        className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
         placeholder='juanPerez123@gmail.com'
       />
-      <label htmlFor="message" className="text-white block text-sm mb-2 font-medium mt-4"
+      </div>
+      <div>
+      <label htmlFor="message" className="text-white block text-sm mb-2 font-medium mt-4 border-l-4 border-green-600 pl-4"
       >Mensaje</label>
       <textarea
         id="message"
@@ -95,10 +100,11 @@ const ContactForm = () => {
         onChange={handleOnChange}
         required
         value={inputs.message}
-        className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 mt-2"
+        className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 mt-2"
         placeholder='Escriba su mensaje'
       />
-      <button type="submit" disabled={status.submitting} className="bg-purple-600 border hover:bg-purple-500 border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 mt-6">
+      </div>
+      <button type="submit" disabled={status.submitting} className="bg-violet-700 border hover:bg-violet-500 border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 mt-6">
         {!status.submitting
           ? !status.submitted
             ? 'Enviar'
@@ -109,7 +115,7 @@ const ContactForm = () => {
     {status.info.error && (
       <div className="error">Error: {status.info.msg}</div>
     )}
-    {!status.info.error && status.info.msg && <p className='text-green-500 mt-3 text-center'>{status.info.msg}</p>}
+    {!status.info.error && status.info.msg && <p className='text-green-600 mt-3 text-center'>{status.info.msg}</p>}
   </main>
 );
   

@@ -17,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     title: "Mi porfolio",
-    description: "Mi porfolio web personal, Hecho con Nextjs",
+    description: "Mi porfolio web personal, hecho con Nextjs",
     image: "/images/projects/2.webp" ,
     tag:["All", "Web"],
     gitUrl:"https://github.com/Flavioarzamendia/porfolioEnNextjs",

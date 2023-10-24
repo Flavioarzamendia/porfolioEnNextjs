@@ -54,7 +54,7 @@ const AboutSection = () => {
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image src="/images/about-image.webp" alt="Working" title="Working" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">Sobre Mi</h2>
+          <h2 className="text-4xl font-bold text-white mb-4 border-l-4 border-green-600 pl-6 ">Sobre Mi</h2>
           <div className=" p-6  bg-violet-700 rounded-lg">
           <p className="text-base lg:text-lg ">
           Hola, soy Flavio, un desarrollador web con experiencia en WordPress y conocimientos sólidos de HTML, CSS y JavaScript.
