@@ -74,7 +74,7 @@ const ContactForm = () => {
         onChange={handleOnChange}
         required
         value={inputs.name}
-        className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+        className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5"
         placeholder='Juan Perez'
       />
       </div>
@@ -87,7 +87,7 @@ const ContactForm = () => {
         onChange={handleOnChange}
         required
         value={inputs.email}
-        className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+        className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5"
         placeholder='juanPerez123@gmail.com'
       />
       </div>
@@ -100,7 +100,7 @@ const ContactForm = () => {
         onChange={handleOnChange}
         required
         value={inputs.message}
-        className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 mt-2"
+        className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5 mt-2"
         placeholder='Escriba su mensaje'
       />
       </div>

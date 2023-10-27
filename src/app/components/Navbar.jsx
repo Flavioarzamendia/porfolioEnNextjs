@@ -33,6 +33,7 @@ const Navbar = () => {
         <Link
           href={"/"}
           className="text-2xl md:text-5xl text-white font-bold   "
+          alt="Desarrollo web"
         >
           FA
         </Link>

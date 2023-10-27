@@ -34,6 +34,8 @@ const TAB_DATA = [
         <li>Paginas con Wordpress</li>
         <li>Mantenimiento de paginas web de Wordpress</li>
         <li>Paginas con HTML5,CSS3 y JavaScript</li>
+        <li>Auditoria simple de sitio web</li>
+        <li>Asesoramiento sobre como hacer tu pagina web</li>
       </ul>
     ),
   },
