@@ -23,10 +23,10 @@ const EmailSection = () => {
            Espero recibir su mensaje o visita en cualquiera de mis perfiles.¡Gracias!
         </p>
         <div className="socials flex flex-row gap-2 ">
-          <Link href="https://github.com/Flavioarzamendia">
+          <Link href="https://github.com/Flavioarzamendia" target="_blank">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="https://www.linkedin.com/in/flavio-arzamendia-salinas">
+          <Link href="https://www.linkedin.com/in/flavio-arzamendia-salinas" target="_blank">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
