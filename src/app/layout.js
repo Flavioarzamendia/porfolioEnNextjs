@@ -5,7 +5,7 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'FA Desarrollo Web | Marketing Digital',
+  title: 'FLavio Arzamendia Desarrollo Web',
   description: 'Soy un desarrollador web apasionado con experiencia en WordPress, HTML5, CSS3 y JavaScript. Ofrezco servicios de diseño web personalizado.'
 }
 
