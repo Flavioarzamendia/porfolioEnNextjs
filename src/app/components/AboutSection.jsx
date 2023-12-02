@@ -36,6 +36,7 @@ const TAB_DATA = [
         <li>Paginas con HTML5,CSS3 y JavaScript</li>
         <li>Auditoria simple de sitio web</li>
         <li>Asesoramiento sobre como hacer tu pagina web</li>
+        <li>Marketing Digital</li>
         <li>Asesoramiento sobre Estrategias de Marketing Digital</li>
       </ul>
     ),
