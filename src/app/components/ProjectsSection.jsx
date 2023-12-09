@@ -41,6 +41,15 @@ const projectsData = [
     gitUrl: "https://github.com/Flavioarzamendia",
     previewUrl: "/",
 },
+{
+  id: 5,
+  title: "Administrador de Pacientes ",
+  description: "Administrador de pacientes, hecho en react con tailwind y vite, puede ingresar al link del sitio para ver y probarlo",
+  image: "/images/projects/5.webp",
+  tag:["All","Web"],
+  gitUrl: "https://github.com/Flavioarzamendia/pacientes-react",
+  previewUrl: "https://spontaneous-druid-e41e26.netlify.app/",
+},
 ]
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
