@@ -37,8 +37,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl pt-5">
-            Soy desarrollador web Frontend, con las tecnologias de: Wordpress,
-            Html5, Css3 y JavaScript.
+          Desarrollador web Frontend especializado en Wordpress, HTML5, CSS3, JavaScript y React.
           </p>
           <div>
             <button className="px-0.5 py-0.5 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-600 via-purple-500 to-orange-400 hover:bg-slate-200 text-white">

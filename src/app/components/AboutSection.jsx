@@ -9,10 +9,9 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Wordpress</li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
+        <li>Desarrollo en WordPress</li>
+        <li>HTML5, CSS3 y JavaScript</li>
+        <li>Experiencia en React</li>
       </ul>
     ),
   },
@@ -22,7 +21,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Frontend Developer, Udemy</li>
-        <li>Universidad Nacional De La Matanza</li>
+        <li> Ingenieria en, Universidad Nacional De La Matanza</li>
       </ul>
     ),
   },
@@ -31,13 +30,13 @@ const TAB_DATA = [
     id: "servicios",
     content: (
       <ul className="list-disc pl-2">
-        <li>Paginas con Wordpress</li>
-        <li>Mantenimiento de paginas web de Wordpress</li>
-        <li>Paginas con HTML5,CSS3 y JavaScript</li>
-        <li>Auditoria simple de sitio web</li>
-        <li>Asesoramiento sobre como hacer tu pagina web</li>
-        <li>Marketing Digital</li>
-        <li>Asesoramiento sobre Estrategias de Marketing Digital</li>
+        <li>Desarrollo de páginas web con WordPress</li>
+        <li>Mantenimiento especializado para sitios web en WordPress</li>
+        <li>Creación de páginas con HTML5, CSS3 y JavaScript</li>
+        <li>Auditoría básica de sitios web para una mejora continua</li>
+        <li>Asesoramiento experto sobre la creación de tu página web</li>
+        <li>Servicios de Marketing Digital para potenciar tu presencia en línea</li>
+        <li>Consultoría sobre Estrategias de Marketing Digital para un crecimiento efectivo</li>
       </ul>
     ),
   },
@@ -56,16 +55,29 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image className="rounded-3xl" src="/images/about-image.webp" alt="Working web developer" title="Working web developer" width={500} height={500} />
+        <Image
+          className="rounded-3xl"
+          src="/images/about-image.webp"
+          alt="Working web developer"
+          title="Working web developer"
+          width={500}
+          height={500}
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4 border-l-4 border-green-600 pl-6 ">Sobre Mi</h2>
-          <div className=" p-6 bg-violet-700 rounded-lg">
-          <p className="text-base lg:text-lg ">
-          Hola, soy Flavio, un desarrollador web con experiencia en WordPress y conocimientos sólidos de HTML, CSS y JavaScript.
-           Mi objetivo es ayudar a las empresas a destacar en línea y atraer a su audiencia.
-           No solo creo su sitio web, sino que también ofrezco soporte continuo y mantenimiento para garantizar que su presencia en línea
-          esté siempre actualizada y funcione sin problemas.
-          </p>
+          <h2 className="text-4xl font-bold text-white mb-4 border-l-4 border-green-600 pl-6 ">
+            Sobre Mi
+          </h2>
+          <div className=" p-6 bg-green-700 rounded-lg">
+            <p className="font-2lg lg:text-lg ">
+              ¡Hola! Soy Flavio, un apasionado desarrollador web especializado
+              en WordPress, con sólidos conocimientos en HTML, CSS, JavaScript y
+              React. Mi misión es potenciar la presencia en línea, ya sea para
+              grandes empresas o pequeños emprendedores. Diseño sitios web a
+              medida, brindando soporte continuo y mantenimiento para garantizar
+              una presencia en línea siempre actualizada y óptima. Confíe en mis
+              habilidades para impulsar el éxito de su negocio o proyecto
+              personal en el vasto mundo digital.
+            </p>
           </div>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
