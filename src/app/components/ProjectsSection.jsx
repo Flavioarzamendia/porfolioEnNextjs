@@ -7,7 +7,7 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
   id: 1,
-  title: "Web de Spa",
+  title: "Sitio web para spa",
   description: "Sitio web de spa, creado en WordPress, se optimiza para móviles, utiliza Elementor y ha sido personalizado para una experiencia única",
   image: "/images/projects/1.webp",
   tag:["All", "Web", "Wordpress"],
