@@ -50,6 +50,16 @@ const projectsData = [
   gitUrl: "https://github.com/Flavioarzamendia/pacientes-react",
   previewUrl: "https://spontaneous-druid-e41e26.netlify.app/",
 },
+{
+  id: 6,
+  title: "Planificador de gastos",
+  description: "Planificador de gastos, hecho con react y css3",
+  image: "/images/projects/control-de-gastos.webp",
+  tag:["All","Web"],
+  gitUrl: "https://github.com/Flavioarzamendia/pacientes-react",
+  previewUrl: "https://harmonious-semifreddo-0b2c1c.netlify.app/",
+},
+
 ]
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
