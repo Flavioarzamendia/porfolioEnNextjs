@@ -56,8 +56,17 @@ const projectsData = [
   description: "Planificador de gastos, hecho con react y css3",
   image: "/images/projects/control-de-gastos.webp",
   tag:["All","Web"],
-  gitUrl: "https://github.com/Flavioarzamendia/pacientes-react",
+  gitUrl: "https://github.com/Flavioarzamendia/Control-gastos-React",
   previewUrl: "https://harmonious-semifreddo-0b2c1c.netlify.app/",
+},
+{
+  id: 7,
+  title: "Cotizador De Criptomonedas",
+  description: "Cotizador de Criptomonedas en tiempo real",
+  image: "/images/projects/cotizador-criptomonedas.webp",
+  tag:["All","Web"],
+  gitUrl: "https://github.com/Flavioarzamendia/cotizar-de-criptos",
+  previewUrl: "https://criptocotizaciononline.netlify.app/",
 },
 
 ]
