@@ -1,7 +1,6 @@
 import React from "react";
 
 const Footer = () => {
-    const today = new Date();
   return (
     <footer className="footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white sm:mx-2">
       <div className="container p-12 flex justify-between ">
